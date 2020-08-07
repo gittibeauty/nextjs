@@ -21,7 +21,7 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <Link href="https://gittiberlindev.myshopify.com/a/landing-page-test/test"><a>Test Page</a></Link>
+          <a href="https://gittiberlindev.myshopify.com/a/landing-page-test/test">Test Page</a>
         </div>
       </main>
 
