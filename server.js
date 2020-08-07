@@ -38,7 +38,6 @@ app.prepare().then(() => {
     await handle(ctx.req, ctx.res);
     ctx.respond = false;
     ctx.res.statusCode = 200;
-    ctx.res.setHeader('Content-Type', 'application/liquid')
     return
   });
 

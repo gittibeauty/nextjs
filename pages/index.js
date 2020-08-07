@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -37,4 +36,12 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+Home.getInitialProps = ({ res }) => {
+  if (res) {
+    res.setHeader('Content-Type', 'application/liquid');
+  }
+
+  return {};
 }
